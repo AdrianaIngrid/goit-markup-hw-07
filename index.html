@@ -15,10 +15,20 @@
             <!--Antetul paginii-Top Line-->
          
             <header class="header-parent">
-                <div class="header-div container">
+                <div class="header-div container">             
                 <!--Navbar Section-->
+               
                 <nav class="navbar-links">
                 <a href="./index.html" class="link logo-header header-link">Web<span class="logo-studio">Studio</span></a>
+                <button type="button" class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                   <svg width="32"  height="22" class="menu-icon menu-hamburger" >
+                       <use href="./images/icons.svg#icon-menu"  fill-rule="evenodd"
+                       clip-rule="evenodd">
+                        </use>
+                   </svg>
+               </button>
                     <ul class="list navbar-studio-child">
                         <li><a href="./index.html" class="link navbar-studio">Studio</a></li>
                         <li><a href="./portfolio.html" class="link navbar-studio">Portfolio</a></li>
@@ -31,7 +41,7 @@
                     <li><a href="tel:+110001111111" class="link address-contacts" >+11 (000) 111-11-11</a></li>
                 </ul>
                  </address>
-                </div>
+               </div>
             </header>
        
 
@@ -115,7 +125,10 @@
                     <div class="container">
                   <h2 class="four-section-title">Our Team</h2>
                     <ul class="list four-section-cards">
-                       <li class="our-team-img"><img src="./images/mark-guerrero.jpg" alt="Mark Guerrero Product Designer" width="264">
+                       <li class="our-team-img"><img 
+                        srcset="./images/mark-guerrero.jpg 1x, ./images/mark-guerrero@2x.jpg 2x"
+                        src="./images/mark-guerrero.jpg" 
+                        alt="Mark Guerrero Product Designer" width="264" height="260">
                           <div class="section-four-card">  
                         <h3 class="our-team-names">Mark Guerrero</h3>
                             <p class="section-four-index-paragraph">Product Designer</p>
@@ -155,7 +168,10 @@
                         </ul>
                         </div>
                         </li>               
-                        <li class="our-team-img"><img src="./images/tom-ford.jpg" alt="Tom Ford Frontend Developer" width="264">
+                        <li class="our-team-img"><img
+                            srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                            src="./images/tom-ford.jpg"
+                            alt="Tom Ford Frontend Developer" width="264">
                             <div class="section-four-card">  
                             <h3 class="our-team-names">Tom Ford</h3>
                             <p class="section-four-index-paragraph">Frontend Developer</p>
@@ -195,7 +211,10 @@
                            </ul>
                         </div>
                         </li>                       
-                        <li class="our-team-img"><img src="./images/camila-garcia.jpg" alt="Camila Garcia Marketing" width="264">
+                        <li class="our-team-img"><img 
+                            srcset="./images/camila-garcia.jpg 1x, ./images/camila-garcia@2x.jpg 2x"
+                            src="./images/camila-garcia.jpg" 
+                            alt="Camila Garcia Marketing" width="264">
                             <div class="section-four-card">
                             <h3 class="our-team-names">Camila Garcia</h3>
                             <p class="section-four-index-paragraph">Marketing</p>
@@ -235,7 +254,10 @@
                            </ul>
                             </div>
                         </li>
-                        <li class="our-team-img"><img src="./images/daniel-wilson.jpg" alt="Daniel Wilson UI Designer" width="264">
+                        <li class="our-team-img"><img 
+                            srcset="./images/daniel-wilson.jpg 1x, ./images/daniel-wilson@2x.jpg 2x"
+                            src="./images/daniel-wilson.jpg" 
+                            alt="Daniel Wilson UI Designer" width="264">
                             <div class="section-four-card">
                             <h3 class="our-team-names">Daniel Wilson</h3>
                             <p class="section-four-index-paragraph">UI Designer</p>
@@ -465,8 +487,79 @@
                     
                 </div>   
             </div>
+          <!--<div class="navbar-menu" >-->  
+             <!--Menu Icons-->
+            <div class="menu-container js-menu-container navbar-menu" id="mobile-menu">
+                <a href="./index.html" class="link logo-header header-link">Web<span class="logo-studio">Studio</span></a>
+             <nav class="navbar-links-menu">
+                <button type="button"  class="close-button js-close-menu">
+                    <svg width="8"  height="8" class="circle-image" > <!--class="circle-image"-->
+                        <use href="./images/icons.svg#icon-close-b" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                         </use>
+                    </svg>
+                </button>
+                    <ul class="list navbar-studio-child-menu mobile-menu">
+                        <li><a href="./index.html" class="link navbar-studio-menu">Studio</a></li>
+                        <li><a href="./portfolio.html" class="link navbar-studio-menu">Portfolio</a></li>
+                        <li><a href="" class="link navbar-studio-menu">Contacts</a></li>
+                    </ul>                    
+                </nav>
+               <address class="list address-list">
+                <ul class="list address-items-menu">
+                    
+                    <li><a href="tel:+110001111111" class="link address-phone-menu" >+11 (000) 111-11-11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="link address-menu">info@devstudio.com</a></li>
+                </ul>
+                 </address>
+             <ul class="list social-media-icons-menu">
+                <li class="social-media-icon">
+                    <a href="" class="social-media-link">
+                    <svg width="24" height="24" class="footer-svg">
+                        <use href="./images/icons.svg#icon-instagram">
+                        </use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="social-media-icon">
+                    <a href="" class="social-media-link">
+                    <svg width="24" height="24" class="footer-svg">
+                        <use href="./images/icons.svg#icon-twitter">
+                        </use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="social-media-icon">
+                    <a href="" class="social-media-link">
+                    <svg width="24" height="24" class="footer-svg">
+                        <use href="./images/icons.svg#icon-facebook">
+                        </use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="social-media-icon">
+                    <a href="" class="social-media-link">
+                    <svg width="24" height="24" class="footer-svg">
+                        <use href="./images/icons.svg#icon-linkedin">
+                        </use>
+                    </svg>
+                    </a>
+                </li>
+            </ul> 
+        </div>
+            <!--End Menu Icons-->
+>
+         
            
             
             <script src="./js/modal.js"></script>
+            <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+          ></script>
+          <script defer src="./mobile-menu.js"></script>
+          
         </body>
 </html>
